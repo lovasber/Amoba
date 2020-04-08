@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+    margin:0;
+    padding: 0;
+    background-color: #718792;
+    color: azure;
+}
+#container{
+    margin: 25px 175px;
+    color: azure;
+
+}
+
+#highscore{
+    color:white;
+    float:right;
+}
+
+header{
+    font-family: 'Lato', sans-serif;
+    height: 50px;
+    text-align: center;
+    color:#000;
+    padding-top:20px;
+    background-color: #ffa726;
+    font-size: 30px;
+}
+
+.generaltGomb{
+    padding: 0;
+    background-color: #455a64;
+    color: #ffa726;
+    height:40px;
+    width:40px;
+    font-size: 35px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 0;
+    
+}
+.kuldGomb{
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+}
+#error{
+    color:rgba(255, 0, 0, 0.466);
+    font-size: large;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+select {
+    text-align: center;
+    background-color: #c67100;
+    color: white;
+    padding: 5px;
+    width: 50px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+  }
+
+.inputmezo{   
+    padding: 5px;
+    font-size: 15px;
+    height: 20px;
+    border-radius: 5px;
+    border: 0;
+}
+#meretBeker{
+    margin: 20px;
+}
+
+#jatekMezo{
+    margin-top: 20px;
+    background-color: #ffff;
+    border-radius: 10px;
+    flex: 60%;
+    grid-area: tabla;
+}
+#statisztikaOut{
+    grid-area: stat;
+}
+#ido{
+    grid-area: ido;
+    width: 25px;
+    flex: 20%;
+    float: left;
+    font-size: 30px;
+}
+#jatekContainer{
+    margin: auto;
+    display: flex;
+}
+
+.mezoStatiszitka{
+    display: grid;
+    grid-template-areas:
+    'tabla tabla ido stat';
+    grid-gap: 10px;
+}
